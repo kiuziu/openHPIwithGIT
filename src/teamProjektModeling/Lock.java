@@ -4,26 +4,26 @@ package teamProjektModeling;
 public class Lock {
 	
 	private String code;
-	private LockTyp art;
+	private LockKind kind;
 	private LockStatus status;
 	
-	public Lock(LockTyp art, String code) {
-		this.art = art;
+	public Lock(LockKind kind, String code) {
+		this.kind = kind;
 		setCode(code);
 		status = LockStatus.GESCHLOSSEN;
 	}
 	
-	public Lock(LockTyp art){
-		this(art, "0000");
+	public Lock(LockKind kind){
+		this(kind, "0000");
 	}
 	
 	public Lock(){
-		this(LockTyp.NO_LOCK);
+		this(LockKind.NO_LOCK);
 		status = LockStatus.OFFEN;
 	}
 	
-	public String getArt() {
-		return art.name();
+	public String getLockKind() {
+		return kind.name();
 	}
 	
 	protected String getCode() {
@@ -39,11 +39,11 @@ public class Lock {
 	}
 	
 	public String toString(){
-		switch(art){
+		switch(kind){
 		   case NO_LOCK : return "ohne Schloss";
 		   case CODE_LOCK : return "Schloss ist " + (status == LockStatus.OFFEN ? "offen":"zu") + ". Code: " + code;
 		   case KEY_LOCK : return "Schloss ist " + (status == LockStatus.OFFEN ? "offen":"zu");
-		   default : return art.name();
+		   default : return kind.name();
 		}
 	}	
 }

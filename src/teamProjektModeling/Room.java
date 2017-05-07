@@ -2,13 +2,13 @@ package teamProjektModeling;
 
 import java.util.ArrayList;
 
-public class Raum {
+public class Room {
 	
 	private final String name;
 	private final Zugang[] zugaenge;
 	private ArrayList<Inventar> inventar;
 	
-	public Raum(String name, Zugang... zugaenge) {
+	public Room(String name, Zugang... zugaenge) {
 		this.name = name;
 		this.zugaenge = zugaenge;
 		inventar = new ArrayList<>();

@@ -3,23 +3,23 @@ package teamProjektModeling;
 public class Inventar {
 
 	private final Object object;
-	private Raum ort;
+	private Room location;
 
-	public Inventar(Object object, Raum ort) {
+	public Inventar(Object object, Room location) {
 		this.object = object;
-		this.setOrt(ort);
+		this.setLocation(location);
 	}
 
-	public Object getArt() {
+	public Object getItem() {
 		return object;
 	}
 
-	public Raum getOrt() {
-		return ort;
+	public Room getLocation() {
+		return location;
 	}
 
-	public void setOrt(Raum ort) {
-		this.ort = ort;
+	public void setLocation(Room location) {
+		this.location = location;
 	}
 	
 	@Override
