@@ -1,4 +1,4 @@
-# openHPIwithGIT
+# Eike´s Haupquartier
 Aufgabenstellung
 
 Eure Aufgabe ist es, in Teamarbeit Eikes Hauptquartier zu modellieren. 
