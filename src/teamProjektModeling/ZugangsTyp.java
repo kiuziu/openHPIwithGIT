@@ -1,7 +1,7 @@
 package teamProjektModeling;
 
 public enum ZugangsTyp {
-	DOOR("Tür"), 
+	DOOR("TÃ¼r"), 
 	GATE("Tor"), 
 	WINDOW("Fenster"), 
 	TRAP("Klappe"), 
